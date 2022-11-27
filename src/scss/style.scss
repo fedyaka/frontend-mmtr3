@@ -1,0 +1,11 @@
+//при помощи @import можно импортировать другие scss стили из другого файла в главный файл
+//импортированы стили, они генерируются автоматический
+@import "fonts";
+
+body{
+    span{
+        color: red;
+        font-family: GULAG Pavljenko;
+    }
+    background-image: url("../img/лого5.jpg") 0 0 repeat;
+}
