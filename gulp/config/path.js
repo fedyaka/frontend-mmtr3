@@ -17,7 +17,8 @@ export const path = {
         files: buildFolder + "/files/"
     },
     src: {
-        js: srcFolder + "/js/app.js",
+        js: srcFolder + "/js/**/*.js",
+        jsx: srcFolder + "/js/app.jsx",
         images: srcFolder + "/img/**/*.{jpg,jpeg,png,gif,webp}",
         svg: srcFolder + "/img/**/*.svg",
         scss: srcFolder + "/scss/style.scss",
@@ -26,7 +27,7 @@ export const path = {
         files: srcFolder + "/files/**/*.*"
     },
     watch: {
-        js: srcFolder + "/js/**/*.js",  
+        js: srcFolder + "/js/**/*.{js,jsx}", 
         images: srcFolder + "/img/**/*.{jpg,jpeg,png,gif,ico,webp,svg}",
         scss: srcFolder + "/scss/**/*.scss",
         html: srcFolder + "/**/*.html",//следим за всеми html файлами, что бы генерировать итог даже при изменении html модулей

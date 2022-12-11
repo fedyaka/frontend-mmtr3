@@ -48,7 +48,9 @@ export const scss = () =>{
         .pipe(
             app.plugins.if(//Проверка на режим запуска gulp
                 app.isBuild, 
-                cleanCss()//сжатие файла
+                cleanCss({
+                    level: 2
+                })//сжатие файла
             )
         )
         .pipe(rename({
