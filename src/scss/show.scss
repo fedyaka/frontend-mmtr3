@@ -1,0 +1,40 @@
+.show{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input{
+        width: 240px;
+        line-height: 30px;
+        font-size: 1em;
+        margin-top: 20px;
+    }
+
+    li{
+        margin-bottom: 10px;
+    }
+
+    h4{
+        margin-top: 20px;
+        font-size: 1.2em;
+    }
+    p{
+        font-size: 1em;
+    }
+
+    &__error{
+        color: darkred;
+        font-size: 0.8em;
+    }
+
+    &__button-change{
+        margin-left: 10px;
+    }
+
+    &__del-button{
+        margin-top: 30px;
+    }
+
+
+}

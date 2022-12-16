@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import path from '../path.js';
+import path from '../../path.js';
 
 export default class ShowTranslation extends Component {
 
@@ -37,7 +37,7 @@ export default class ShowTranslation extends Component {
         if (!isLoaded){
             return <b>Загрузка</b>
         }else if (error){
-            return <p>{error.message}</p>
+            return <p className='error'>{error.message}</p>
         }else{
             return(<>
                 <p>Перевод:</p>

@@ -2,7 +2,107 @@
 //импортированы шрифты, они генерируются автоматический из шрифтов в папке fonts
 @import "fonts";
 
-*{
+* {
     margin: 0;
     padding: 0;
-} // убираем все стандартные отступы у объектов
+}
+
+// убираем все стандартные отступы у объектов
+
+html{
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url("../img/Pattern.jpg");
+    background-color: rgba(52, 106, 194, 0.3);
+    height: 100%;
+    font-size: 20px;
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex: 1 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    .content-box{
+        padding: 10px;
+        background: rgba(50, 129, 168, 0.98);
+        width: 70%;
+        max-width: 1200px;
+        min-width: 800px;
+        border: #fff solid 1px;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+.footer{
+    flex: 0 0 auto;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+table{
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.button{
+    background-color: rgba(20, 104, 156, 1);
+    border: none;
+    color: black;
+    padding: 3px;
+    font-size: 0.8em;
+}
+.button:hover{
+    background-color: rgb(130, 159, 177, 0.9);
+    transition: 0.5s;
+}
+
+.button:disabled{
+    color: darkgray;
+}
+
+.del-button{
+    color: darkred;
+    margin-left: 3px;
+}
+
+.align-items-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.margin-top{
+    margin-top: 10px;
+}
+
+@import "header";
+
+@import "main";
+
+@import "show";
+
+@import "addWord";

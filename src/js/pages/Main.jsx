@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import path from '../path.js';
-import WordTable from "../components/WordTable.jsx";
+import WordTable from "../components/wordTable/WordTable.jsx";
 
 export default class Main extends Component {
 
@@ -42,7 +42,7 @@ export default class Main extends Component {
       return <h2>{error.message}</h2>
     } else{
       return  (
-        <div>
+        <div className='tables-wrap'>
           {
             dictionaries.map(dictionary => <WordTable key={dictionary.id} dictionary={dictionary}></WordTable>)
           }

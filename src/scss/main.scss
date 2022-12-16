@@ -1,0 +1,92 @@
+.tables-wrap{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    &__button-add{
+        color: #fff;
+        margin: 10px 0;
+        line-height: 40px;
+    }
+    
+    &__button-add:hover{
+        background-color: rgba($color: #fff, $alpha: 0.3);
+        transition: 0.5s;
+    }
+    
+    &__word-table{
+        margin: 30px 20px 0 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content:start;
+        width: 45%;
+        min-width: 400px;
+    
+        table{
+            width: 100%;
+            min-width: 400px;
+    
+            thead {
+    
+                th{
+                    letter-spacing: 2px;
+                    border: 1px solid black;
+                    line-height: 35px;
+                }
+    
+                th:nth-child(1){
+                    width: 60px;
+                }
+    
+                th:nth-child(2){
+                    width: 85%;
+                }
+                th:nth-child(3){
+                    width: 90px;
+                }
+                th:nth-child(4){
+                    width: 80px;
+                }
+            }
+            td{
+                letter-spacing: 1px;
+                border: 1px solid black;
+                line-height: 35px;
+            }
+            td:nth-child(2){
+                padding-left: 15px;
+                text-align: left;
+    
+                details{
+                    summary{
+                        font-weight: 600;
+                    }
+    
+                    p{
+                        line-height: 20px;
+                    }
+    
+                    .error{
+                        color: black;
+                        margin-bottom: 5px;
+                        font-size: 0.8em;
+                    }
+                    
+                    ul{
+    
+                        li{
+                            line-height: 25px;
+                            list-style-type:circle;
+                            list-style-position: inside;
+                        }
+                    }
+    
+                }
+            }
+            
+        }
+    }
+}
+
+

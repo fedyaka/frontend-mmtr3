@@ -8,6 +8,7 @@ const path = {
     dictionary: originPath + "/dictionary",
     word: originPath + "/dictionary" + "/word",
     translation: originPath + "/dictionary" + "/word" + "/translation",
+    search: originPath + "/dictionary" + "/search"
 };
 
 export default path;
