@@ -13,12 +13,11 @@ html{
     height: 100%;
 }
 
-body {
+.body {
     font-family: sans-serif;
-    background-image: url("../img/Pattern.jpg");
-    background-color: rgba(52, 106, 194, 0.3);
     height: 100%;
-    font-size: 20px;
+    width: 100%;
+    font-size: 22px;
 }
 
 #root{
@@ -26,6 +25,7 @@ body {
     justify-content: center;
     flex-direction: column;
     min-height: 100%;
+    background-image: url(../img/pattern.jpg);
 }
 main{
     display: flex;
@@ -106,3 +106,5 @@ table{
 @import "show";
 
 @import "addWord";
+
+@import "error.scss";

@@ -1,0 +1,12 @@
+.error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__img{
+        width: 512px;
+        height: 512px;
+        background-image: url(../img/errorCat.png);
+    }
+}
